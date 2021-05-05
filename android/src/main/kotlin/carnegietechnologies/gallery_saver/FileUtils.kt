@@ -276,10 +276,10 @@ internal object FileUtils {
                 }
             }
         } catch (fnfE: FileNotFoundException) {
-            Log.e("GallerySaver", fnfE.message)
+            Log.e("GallerySaver", fnfE.message.toString())
             return false
         } catch (e: Exception) {
-            Log.e("GallerySaver", e.message)
+            Log.e("GallerySaver", e.message.toString())
             return false
         }
         return true
